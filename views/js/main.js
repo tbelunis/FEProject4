@@ -547,9 +547,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   window.items = document.querySelectorAll('.mover');
   window.itemsCount = window.items.length;
-  for (var i = 5; i > 0; i--) {
-    phases[5-i] = Math.sin((document.body.scrollTop / 1250) + (i % 5))
-  }
-  console.log(phases);
+
   updatePositions();
 });
